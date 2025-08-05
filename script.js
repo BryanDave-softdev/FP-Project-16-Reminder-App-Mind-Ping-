@@ -1,22 +1,21 @@
-function convert () {
-  const value = parseFloat(document.getElementById("inputValue").value);
-  const type = document.getElementById("conversionType").value;
-  const result = document.getElementById("result");
-  
-  if (isNaN(value)) {
-    result.textContent = "Please enter a valid number.";
+function addReminder() {
+  const reminderInput = document.getElementById("reminderInput");
+  const reminderList = document.getElementById("reminderList");
+  const reminderText = reminderInput.value.trim();
+
+  if (reminderText === "") {
+    alert("Please enter a reminder.");
     return;
   }
-  
-  let output = "";
-  
-  if (type === "mToKm") {
-    output = `${value} meters = ${value / 1000} kilomters`;
-  } else if (type === "KgToLbs") {
-    output = `${value} kg = ${value * 2.20462} lbs`;
-  } else if (type === "cToF") {
-    output = `${value}°C = ${(value * 9/5 + 32).toFixed(2)}°F`;
-  }
-  
-  result.textContent = output;
+
+  const li = document.createElement("li");
+  li.textContent = reminderText;
+  reminderList.appendChild(li);
+
+  reminderinput.value = "";
 }
+
+function clearReminders() {
+  const reminderList = document.getElementById("reminderList");
+  reminderList.innerHTML = "";
+}                                 
