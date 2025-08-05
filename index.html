@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Unit Converter</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <h1>🔄 Unit Converter</h1>
-    
-    <input type="number" id="inputValue" placeholder="Enter value" />
-    
-    <select id="conversionType">
-       <option value="mToKm">Meters to Kilometers</option>
-       <option value="KgToLbs">kilograms to Pounds</option>
-       <option value="cToF">Celsius to Fahrenheit</option>
-    </select>
-    
-    <button onclick="convert()">Convert</button>
-    
-    <p id="result"></p>
-  </div>
-  
-  <script src="script.js"></script>
-</body>
-</html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <title>🧠 MindPing</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>🧠 MindPing</h1>
+      <input type="text" id="reminderInput" placeholder="Type your reminder here...." />
+      <button onclick="addReminder()">Add Reminder</button>
+      <h2>📋 Your Reminders:</h2>
+      <ul id="reminderList"></ul>
+      <button class="clear" onclick="clearReminders()">🧹 Clear All</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>    
+  </html>
