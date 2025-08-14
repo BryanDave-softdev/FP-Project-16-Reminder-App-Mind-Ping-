@@ -11,3 +11,7 @@ A simple web app that helps you remember tasks and thoughts while you’re deep 
 - HTML
 - CSS
 - JavaScript
+
+## 📷 Screenshot
+![Reminder App](reminder-app.PNG)
+
